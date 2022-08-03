@@ -18,8 +18,8 @@ def main():
     browser.get("https://www.instagram.com")
     time.sleep(5)
 
-    username_input = browser.find_element_by_css_selector("input[name='username']")
-    password_input = browser.find_element_by_css_selector("input[name='password']")
+    username_input = browser.find_element(By.CSS_SELECTOR, "input[name='username']")
+    password_input = browser.find_element(By.CSS_SELECTOR, "input[name='password']")
 
     username_input.send_keys(user)
     password_input.send_keys(pwd)
